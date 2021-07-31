@@ -23,19 +23,31 @@ class PNavbar extends React.Component {
       <Navbar variant="dark" bg="dark" expand="lg">
         <Container>
           <Navbar.Brand href="#home">
-            <img alt="Logo"
-                 src={ logo }
-                 width="32" height="32" />
-            { this.props.name }
+            <h3>
+              <img alt="Logo"
+                   src={ logo }
+                   width="40" height="40" />
+              { ' ' + this.props.displayContext('Name') }
+            </h3>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-dark" />
           <Navbar.Collapse id="navbar-dark">
             <Nav className="container-fluid justify-content-end">
-              <Button variant="dark">Primary</Button>
+              <Button variant="dark" aria-label="Whats up!" data-balloon-pos="down">
+                { this.props.displayContext('Company') }</Button>
+              <Button variant="dark" aria-label="Whats up!" data-balloon-pos="down">
+                { this.props.displayContext('Services') }</Button>
+              <Button variant="dark" aria-label="Whats up!" data-balloon-pos="down">
+                { this.props.displayContext('Team') }</Button>
+              <Button variant="dark" aria-label="Whats up!" data-balloon-pos="down">
+                { this.props.displayContext('Contact') } </Button>
               <NavDropdown
                 id="nav-dropdown-dark" title="🌍 Languages" menuvariant="dark">
-                <NavDropdown.Item onClick={ () => this.props.setLanguage(0) }>English</NavDropdown.Item>
-                <NavDropdown.Item onClick={ () => this.props.setLanguage(1) }>中文</NavDropdown.Item>
+                {
+                  this.props.state.data.Languages.map(lan =>
+                    <NavDropdown.Item onClick={ () => this.props.setLanguage(lan) }>{ lan }</NavDropdown.Item>
+                  )
+                }
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
