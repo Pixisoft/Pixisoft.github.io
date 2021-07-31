@@ -8,38 +8,34 @@
  */
 
 import React from 'react';
-import NavBar from 'react-bootstrap';
 
 import logo from '../logo.png';
 
 import {
   Nav, Navbar, NavDropdown,
-  Dropdown,
   Container,
   Button,
 } from 'react-bootstrap';
 
-class _Navbar extends React.Component {
+class PNavbar extends React.Component {
   render () {
     return (
       <Navbar variant="dark" bg="dark" expand="lg">
         <Container>
           <Navbar.Brand href="#home">
-            <img src={ logo } width="32" height="32" />
+            <img alt="Logo"
+                 src={ logo }
+                 width="32" height="32" />
             { this.props.name }
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-dark" />
           <Navbar.Collapse id="navbar-dark">
             <Nav className="container-fluid justify-content-end">
+              <Button variant="dark">Primary</Button>
               <NavDropdown
-                id="nav-dropdown-dark"
-                title="🌍 Languages"
-                menuVariant="dark">
-
-                <NavDropdown.Item href="">English</NavDropdown.Item>
-                <NavDropdown.Item href="">中文</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="">Contact</NavDropdown.Item>
+                id="nav-dropdown-dark" title="🌍 Languages" menuvariant="dark">
+                <NavDropdown.Item onClick={ () => this.props.setLanguage(0) }>English</NavDropdown.Item>
+                <NavDropdown.Item onClick={ () => this.props.setLanguage(1) }>中文</NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>
@@ -49,4 +45,4 @@ class _Navbar extends React.Component {
   }
 }
 
-export default _Navbar;
+export default PNavbar;
