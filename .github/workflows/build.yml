@@ -22,14 +22,11 @@ jobs:
       run: echo $PWD
     
 
-    
-    - name: Set up clone directory
-      run: mkdir '../gh-pages'
 
     - name: Clone branch gh-pages
       uses: actions/checkout@v2
       with:
-        path: '../gh-pages'
+        path: 'gh-pages'
         ref: gh-pages
 
     - name: Print info
