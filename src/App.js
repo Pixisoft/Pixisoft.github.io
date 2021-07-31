@@ -18,7 +18,7 @@ class App extends React.Component {
 
   setLanguage = (lan) => {
     this.setState({ language: lan });
-    this.setState({ language_id: this.state.data.Languages.indexOf(lan) });
+    this.setState({ language_id: this.state.data.SupportLanguages.indexOf(lan) });
   }
 
   displayContext = (key) => {

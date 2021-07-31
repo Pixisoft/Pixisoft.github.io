@@ -42,9 +42,9 @@ class PNavbar extends React.Component {
               <Button variant="dark" aria-label="Whats up!" data-balloon-pos="down">
                 { this.props.displayContext('Contact') } </Button>
               <NavDropdown
-                id="nav-dropdown-dark" title="🌍 Languages" menuvariant="dark">
+                id="nav-dropdown-dark" title="🌍" menuvariant="dark">
                 {
-                  this.props.state.data.Languages.map(lan =>
+                  this.props.state.data.SupportLanguages.map(lan =>
                     <NavDropdown.Item onClick={ () => this.props.setLanguage(lan) }>{ lan }</NavDropdown.Item>
                   )
                 }
