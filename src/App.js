@@ -14,6 +14,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state.data = data;
+    document.title = this.getContext('Name') + ' - ' + this.getContext('Title');
   }
 
   setLanguage = (lan) => {
@@ -21,7 +22,7 @@ class App extends React.Component {
     this.setState({ language_id: this.state.data.SupportLanguages.indexOf(lan) });
   }
 
-  displayContext = (key) => {
+  getContext = (key) => {
     return this.state.data[key][this.state.language_id];
   }
 
@@ -30,7 +31,7 @@ class App extends React.Component {
       <React.Fragment>
         <PNavbar state={ this.state }
                  setLanguage={ this.setLanguage }
-                 displayContext={ this.displayContext }/>
+                 getContext={ this.getContext }/>
       </React.Fragment>
     );
   }

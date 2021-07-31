@@ -27,20 +27,20 @@ class PNavbar extends React.Component {
               <img alt="Logo"
                    src={ logo }
                    width="40" height="40" />
-              { ' ' + this.props.displayContext('Name') }
+              { ' ' + this.props.getContext('Name') }
             </h3>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-dark" />
           <Navbar.Collapse id="navbar-dark">
             <Nav className="container-fluid justify-content-end">
               <Button variant="dark" aria-label="Whats up!" data-balloon-pos="down">
-                { this.props.displayContext('Company') }</Button>
+                { this.props.getContext('Company') }</Button>
               <Button variant="dark" aria-label="Whats up!" data-balloon-pos="down">
-                { this.props.displayContext('Services') }</Button>
+                { this.props.getContext('Services') }</Button>
               <Button variant="dark" aria-label="Whats up!" data-balloon-pos="down">
-                { this.props.displayContext('Team') }</Button>
+                { this.props.getContext('Team') }</Button>
               <Button variant="dark" aria-label="Whats up!" data-balloon-pos="down">
-                { this.props.displayContext('Contact') } </Button>
+                { this.props.getContext('Contact') } </Button>
               <NavDropdown
                 id="nav-dropdown-dark" title="🌍" menuvariant="dark">
                 {
