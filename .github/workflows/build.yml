@@ -40,3 +40,12 @@ jobs:
 
     - name: Move .git to build
       run: mv './gh-pages/.git' './build'
+
+    - name: Push to pages
+      run: |
+        cd './build'
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add .
+        git commit -m "Update pages"
+        git push
