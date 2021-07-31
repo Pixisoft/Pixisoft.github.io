@@ -17,10 +17,20 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+    
+    - name: Set up Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
 
-    - name: Print info
-      run: echo $PWD
+    - name: Set up Yarn
+      run: npm install --global yarn && yarn --version
+    
+    - name: Install dependencies
+      run: yarn install
 
+    - name: Build website
+      run: yarn build
 
     - name: Clone branch gh-pages
       uses: actions/checkout@v2
@@ -28,5 +38,5 @@ jobs:
         path: 'gh-pages'
         ref: gh-pages
 
-    - name: Print info
-      run: echo $PWD && ls
+    - name: Move .git to build
+      run: mv './gh-pages/.git' './build'
