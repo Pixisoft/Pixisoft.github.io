@@ -1,4 +1,4 @@
-name: Build site
+name: Build Website
 
 on:
   push: 
@@ -23,7 +23,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Setup Yarn
+    - name: Set up Yarn
       run: npm install --global yarn && yarn --version
     
     - name: Install dependencies
