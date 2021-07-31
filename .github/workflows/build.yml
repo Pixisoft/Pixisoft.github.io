@@ -20,7 +20,6 @@ jobs:
 
     - name: Print info
       run: echo $PWD
-    
 
 
     - name: Clone branch gh-pages
@@ -30,4 +29,4 @@ jobs:
         ref: gh-pages
 
     - name: Print info
-      run: echo $PWD
+      run: echo $PWD && ls
