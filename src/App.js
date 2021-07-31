@@ -14,12 +14,17 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state.data = data;
+    this.setLanguage(this.state.language);  // set up language for initialization
+  }
+
+  updateTitle() {
     document.title = this.getContext('Name') + ' - ' + this.getContext('Title');
   }
 
   setLanguage = (lan) => {
     this.setState({ language: lan });
     this.setState({ language_id: this.state.data.SupportLanguages.indexOf(lan) });
+    this.updateTitle();
   }
 
   getContext = (key) => {
