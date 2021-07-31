@@ -38,4 +38,4 @@ jobs:
         ref: gh-pages
 
     - name: Print info
-      run: ls
+      run: echo $PWD
