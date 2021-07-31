@@ -28,3 +28,14 @@ jobs:
     
     - name: Install dependencies
       run: yarn install
+
+    - name: Build website
+      run: yarn build && cd build
+
+    - name: Clone branch gh-pages
+      uses: actions/checkout@v2
+      with:
+        ref: gh-pages
+
+    - name: Print info
+      run: ls
