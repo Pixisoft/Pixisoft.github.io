@@ -38,6 +38,7 @@ jobs:
     - name: Clone branch gh-pages
       uses: actions/checkout@v2
       with:
+        path: '../gh-pages'
         ref: gh-pages
 
     - name: Print info
