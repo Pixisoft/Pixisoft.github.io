@@ -1,9 +1,11 @@
 import React from 'react';
 import PNavbar from './components/PNavbar.js';
+import PContent from './components/PContent.js';
 import PFooter from './components/PFooter.js';
 
 import data from './data/translation.json';
 import './App.css';
+import './App.scss';
 
 class App extends React.Component {
   state = {
@@ -23,8 +25,11 @@ class App extends React.Component {
       <React.Fragment>
         <PNavbar state={ this.state }
                  setLanguage={ this.setLanguage }
-                 getContext={ this.getContext }/>
-        <PFooter/>
+                 getContext={ this.getContext } />
+        <PContent state={ this.state }
+                  getContext={ this.getContext } />
+        <PFooter state={ this.state }
+                 getContext={ this.getContext } />
       </React.Fragment>
     );
   }
