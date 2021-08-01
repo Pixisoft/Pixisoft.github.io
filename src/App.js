@@ -17,20 +17,6 @@ class App extends React.Component {
     this.setLanguage(this.state.language);  // set up language for initialization
   }
 
-  updateTitle() {
-    document.title = this.getContext('Name') + ' - ' + this.getContext('Title');
-  }
-
-  setLanguage = (lan) => {
-    this.setState({ language: lan });
-    this.setState({ language_id: this.state.data.SupportLanguages.indexOf(lan) });
-    this.updateTitle();
-  }
-
-  getContext = (key) => {
-    return this.state.data[key][this.state.language_id];
-  }
-
   render () {
     return (
       <React.Fragment>
@@ -39,6 +25,31 @@ class App extends React.Component {
                  getContext={ this.getContext }/>
       </React.Fragment>
     );
+  }
+
+  /**
+   * Update the current language.
+   * @param { string } lan - Language name we use as id in json data.
+   */
+  setLanguage = (lan) => {
+    this.setState({ language: lan });
+    this.setState({ language_id: this.state.data.SupportLanguages.indexOf(lan) });
+    this.updateTitle();
+  }
+
+  /**
+   * You pass in the target key for translation.
+   * @param { string } lan - Language name we use as id in json data.
+   */
+  getContext = (key) => {
+    return this.state.data[key][this.state.language_id];
+  }
+
+  /**
+   * Update title with corresponding language.
+   */
+  updateTitle() {
+    document.title = this.getContext('Name') + ' - ' + this.getContext('Title');
   }
 }
 
