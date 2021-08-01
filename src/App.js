@@ -2,7 +2,7 @@ import React from 'react';
 import PNavbar from './components/PNavbar.js';
 import PFooter from './components/PFooter.js';
 
-import data from './data/languages.json';
+import data from './data/translation.json';
 import './App.css';
 
 class App extends React.Component {
