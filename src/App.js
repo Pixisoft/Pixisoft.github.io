@@ -1,11 +1,10 @@
 import React from 'react';
+
 import PNavbar from './components/PNavbar.js';
 import PContent from './components/PContent.js';
 import PFooter from './components/PFooter.js';
 
 import data from './data/translation.json';
-import './App.css';
-import './App.scss';
 
 class App extends React.Component {
   state = {
