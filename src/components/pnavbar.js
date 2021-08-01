@@ -1,5 +1,5 @@
 /**
- * $File: navbar.js $
+ * $File: PNavbar.js $
  * $Date: 2021-07-31 18:25:23 $
  * $Revision: $
  * $Creator: Jen-Chieh Shen $

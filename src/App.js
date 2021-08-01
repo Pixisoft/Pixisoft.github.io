@@ -1,5 +1,7 @@
 import React from 'react';
-import PNavbar from './components/pnavbar.js';
+import PNavbar from './components/PNavbar.js';
+import PFooter from './components/PFooter.js';
+
 import data from './data/languages.json';
 import './App.css';
 
@@ -22,6 +24,7 @@ class App extends React.Component {
         <PNavbar state={ this.state }
                  setLanguage={ this.setLanguage }
                  getContext={ this.getContext }/>
+        <PFooter/>
       </React.Fragment>
     );
   }
