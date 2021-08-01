@@ -10,7 +10,6 @@
 import React from 'react';
 import logo from '../logo.png';
 import {
-  Nav, Navbar, NavDropdown,
   Container, Row, Col,
   Button,
 } from 'react-bootstrap';

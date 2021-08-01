@@ -9,7 +9,6 @@
 
 import React from 'react';
 import {
-  Nav, Navbar, NavDropdown,
   Container, Row, Col,
   Button,
 } from 'react-bootstrap';
