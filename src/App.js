@@ -1,5 +1,4 @@
 import React from 'react';
-
 import PNavbar from './components/pnavbar.js';
 import data from './data/languages.json';
 import './App.css';
