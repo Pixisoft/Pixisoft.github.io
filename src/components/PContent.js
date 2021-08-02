@@ -9,8 +9,7 @@
 import React from 'react';
 import PServices from './PServices.js';
 import {
-  Container, Row, Col,
-  Card,
+  Container,
 } from 'react-bootstrap';
 
 /**
