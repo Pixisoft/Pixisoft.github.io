@@ -33,14 +33,18 @@ class PNavbar extends React.Component {
           <Navbar.Toggle aria-controls="navbar-dark" />
           <Navbar.Collapse id="navbar-dark">
             <Nav className="container-fluid justify-content-end">
-              <Button variant="dark" aria-label="Whats up!" data-balloon-pos="down">
+              <Button variant="dark" data-balloon-pos="down"
+                      aria-label={ this.props.getContext('TipCompany') }>
                 { this.props.getContext('Company') }</Button>
-              <Button variant="dark" aria-label="Whats up!" data-balloon-pos="down">
+              <Button variant="dark" data-balloon-pos="down"
+                      aria-label={ this.props.getContext('TipServices') }>
                 { this.props.getContext('Services') }</Button>
-              <Button variant="dark" aria-label="Whats up!" data-balloon-pos="down">
+              <Button variant="dark" data-balloon-pos="down" disabled
+                      aria-label={ this.props.getContext('TipTeam') }>
                 { this.props.getContext('Team') }</Button>
-              <Button variant="dark" aria-label="Whats up!" data-balloon-pos="down">
-                { this.props.getContext('Contact') } </Button>
+              <Button variant="dark" data-balloon-pos="down"
+                      aria-label={ this.props.getContext('TipContact') }>
+                { this.props.getContext('Contact') }</Button>
               <NavDropdown
                 id="nav-dropdown-dark" title="🌍" menuvariant="dark">
                 {

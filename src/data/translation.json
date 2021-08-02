@@ -11,5 +11,15 @@
   "Company": [ "Company", "公司", "会社", "회사" ],
   "Services": [ "Services", "服務", "サービス", "서비스" ],
   "Team": [ "Team", "團隊", "チーム", "팀" ],
-  "Contact": [ "Contact", "聯絡", "コンタクト", "연락하다" ]
+  "Contact": [ "Contact", "聯絡", "コンタクト", "연락하다" ],
+  "TipCompany": [ "!", "", "", "" ],
+  "TipServices": [ "!", "", "", "" ],
+  "TipTeam": [ "!", "", "", "" ],
+  "TipContact": [ "Us!", "我們!", "", "" ],
+  "CompanyIntro": [
+    "",
+    "",
+    "",
+    ""
+  ]
 }
