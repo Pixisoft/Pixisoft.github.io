@@ -26,41 +26,22 @@ class PServices extends React.Component {
       <Container className="d-flex justify-content-center">
         <Row>
           <Col className="border border-primary">
-            <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src={ unity } />
-              <Card.Body className="text-center">
-                <Card.Title>
-                  { this.props.getContext('GameDevelopment_Title') }
-                </Card.Title>
-                <Card.Text>
-                  { this.props.getContext('GameDevelopment_Text') }
-                </Card.Text>
-              </Card.Body>
-            </Card>
+            <img alt="GameDev" src={ unity } width="80" />
+            <br/><br/>
+            <h4>{ this.props.getContext('GameDevelopment_Title') }</h4>
+            { this.props.getContext('GameDevelopment_Text') }
           </Col>
           <Col>
-            <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src={ unity } />
-              <Card.Body className="text-center">
-                <Card.Title>Web Development</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
+            <img alt="GameDev" src={ unity } width="80" />
+            <br/><br/>
+            <h4>{ this.props.getContext('GameDevelopment_Title') }</h4>
+            { this.props.getContext('GameDevelopment_Text') }
           </Col>
           <Col>
-            <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src={ unity } />
-              <Card.Body className="text-center">
-                <Card.Title>Tool Development</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up the bulk of
-                  the card's content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
+            <img alt="GameDev" src={ unity } width="80" />
+            <br/><br/>
+            <h4>{ this.props.getContext('GameDevelopment_Title') }</h4>
+            { this.props.getContext('GameDevelopment_Text') }
           </Col>
         </Row>
       </Container>
