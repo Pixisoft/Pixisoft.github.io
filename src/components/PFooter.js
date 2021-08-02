@@ -9,6 +9,7 @@
 import React from 'react';
 import {
   Container, Row, Col,
+  Button,
 } from 'react-bootstrap';
 
 import logo from '../images/logo.png';
@@ -45,7 +46,7 @@ class PFooter extends React.Component {
             </Col>
             <Col className="text-center justify-content-center align-self-center">
               <Container>
-                <Row className="p-3">
+                <Row className="p-4">
                   <Col>
                     <a href="https://github.com/Pixisoft">
                       <img alt="GitHub" src={ github } width="50"
@@ -84,7 +85,9 @@ class PFooter extends React.Component {
                   </Col>
                 </Row>
                 <Row className="p-1">
-                  { this.props.getContext('FooterQuote') }
+                  <Col className="text-center justify-content-center align-self-center">
+                    { this.props.getContext('FooterQuote') }
+                  </Col>
                 </Row>
               </Container>
             </Col>
