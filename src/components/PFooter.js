@@ -19,20 +19,22 @@ class PFooter extends React.Component {
   render () {
     return (
       <Container fluid className="bg-dark text-white">
-        <Row className="justify-content-center">
-          <Col md={{ offset: 1 }}
-               className="border border-primary">
-            <h3>
-              <img alt="Logo"
-                   src={ logo }
-                   width="40" height="40" />
-              { ' ' + this.props.getContext('Name') }
-            </h3>
-          </Col>
-          <Col className="border border-primary">
-            Links
-          </Col>
-        </Row>
+        <Container>
+          <Row className="justify-content-center">
+            <Col className="border border-primary">
+              <h1>
+                <img alt="Logo"
+                     src={ logo }
+                     width="80" height="80" />
+                { ' ' + this.props.getContext('Name') }
+              </h1>
+              Dolor sit amet, consectetur adipiscing elit duis tristique sollicitudin nibh sit. Egestas integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse!
+            </Col>
+            <Col className="border border-primary">
+              Links
+            </Col>
+          </Row>
+        </Container>
         <Row className="text-center p-3" style={{backgroundColor: "#121416"}}>
           <Col>© 2021 Pixisoft Inc. All rights reserved.</Col>
         </Row>
