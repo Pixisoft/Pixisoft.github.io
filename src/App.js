@@ -45,7 +45,8 @@ class App extends React.Component {
 
   /**
    * You pass in the target key for translation.
-   * @param { string } lan - Language name we use as id in json data.
+   * @param { string } key - is a json identity.
+   * @returns { string } A string that has been translated from data source.
    */
   getContext = (key) => {
     return this.state.data[key][this.state.language_id];
