@@ -24,11 +24,11 @@ class PNavbar extends React.Component {
         <Container>
           <Navbar.Brand href="#home">
             <h3>
-              <img alt="Logo" src={ logo } width="40" />
+              <img alt="Logo" src={ logo } width="40"/>
               { ' ' + this.props.getContext('Name') }
             </h3>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbar-dark" />
+          <Navbar.Toggle aria-controls="navbar-dark"/>
           <Navbar.Collapse id="navbar-dark">
             <Nav className="container-fluid justify-content-end">
               <Button variant="dark" data-balloon-pos="down"

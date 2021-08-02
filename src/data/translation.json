@@ -17,14 +17,26 @@
   "TipTeam": [ "!", "", "", "" ],
   "TipContact": [ "Us!", "我們!", "", "" ],
   "CompanyIntro": [
-    "Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem? Massa sed elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante in nibh mauris, cursus.",
+    "Pixisoft is a studio that focuses on supporting in Software Development field.",
     "",
     "",
     ""
   ],
   "FooterQuote": [
-    "We're headquatered in Taipei, Taiwan and work around the world.",
+    "We're headquatered in Taipei, Taiwan and work around the world. 🎉",
     "我們位於 台北, 台灣 並且期望與世界各地的人們合作!",
+    "",
+    ""
+  ],
+  "GameDevelopment_Title": [
+    "Game Development",
+    "遊戲開發",
+    "",
+    ""
+  ],
+  "GameDevelopment_Text": [
+    "Aliquet risus feugiat in ante metus, dictum at tempor commodo, ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia at quis risus sed vulputate! Cursus metus aliquam eleifend mi!",
+    "",
     "",
     ""
   ]

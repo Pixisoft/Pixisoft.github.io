@@ -7,23 +7,32 @@
  *                   Copyright © 2021 by Shen, Jen-Chieh $
  */
 import React from 'react';
-import logo from '../images/logo.png';
-import github from '../images/icons/github.png';
 import {
   Container, Row, Col,
-  Button,
 } from 'react-bootstrap';
 
+import logo from '../images/logo.png';
+import github from '../images/icons/github.png';
+import youtube from '../images/icons/youtube.png';
+import gmail from '../images/icons/gmail.ico';
+import linkedin from '../images/icons/linkedin.png';
+
+/**
+ * Information at the very bottom of all pages.
+ */
 class PFooter extends React.Component {
   state = {
     bGitHub: false,
+    bYouTube: false,
+    bEmail: false,
+    bLinkedIn: false,
   };
 
   render () {
     return (
       <Container fluid className="bg-dark text-white">
         <Container>
-          <Row className="justify-content-center">
+          <Row>
             <Col className="border border-primary">
               <h1>
                 <img alt="Logo" src={ logo } width="80" />
@@ -34,16 +43,50 @@ class PFooter extends React.Component {
             <Col className="border border-primary">
               Links
             </Col>
-            <Col className="border border-primary text-center p-5">
-              <a href="https://github.com/Pixisoft">
-                <img alt="GitHub" src={ github } width="50"
-                     className={`${this.state.bGitHub ? "animate__animated animate__heartBeat" : ""}`}
-                     id="bGitHub"
-                     onMouseEnter={ this.bounceEnter }
-                     onMouseLeave={ this.bounceLeave }/>
-              </a>
-              <br/><br/>
-              { this.props.getContext('FooterQuote') }
+            <Col className="text-center justify-content-center align-self-center">
+              <Container>
+                <Row className="p-3">
+                  <Col>
+                    <a href="https://github.com/Pixisoft">
+                      <img alt="GitHub" src={ github } width="50"
+                           className={`${this.state.bGitHub ? "animate__animated animate__heartBeat" : ""}`}
+                           id="bGitHub"
+                           onMouseEnter={ this.bounceEnter }
+                           onMouseLeave={ this.bounceLeave }/>
+                    </a>
+                  </Col>
+                  <Col>
+                    <a href="https://www.youtube.com/channel/UCadVGsQF8C1qH7RY7bRcpgw">
+                      <img alt="YouTube" src={ youtube } width="50"
+                           className={`${this.state.bYouTube ? "animate__animated animate__heartBeat" : ""}`}
+                           id="bYouTube"
+                           onMouseEnter={ this.bounceEnter }
+                           onMouseLeave={ this.bounceLeave }/>
+                    </a>
+                  </Col>
+                  <Col>
+                    <a href="mailto:pixisoft.tw@gmail.com">
+                      <img alt="Gmail" src={ gmail } width="50"
+                           className={`${this.state.bEmail ? "animate__animated animate__heartBeat" : ""}`}
+                           id="bEmail"
+                           onMouseEnter={ this.bounceEnter }
+                           onMouseLeave={ this.bounceLeave }/>
+                    </a>
+                  </Col>
+                  <Col>
+                    <a href="https://www.linkedin.com/in/jen-chieh-shen-17a02780/">
+                      <img alt="LinkedIn" src={ linkedin } width="50"
+                           className={`${this.state.bLinkedIn ? "animate__animated animate__heartBeat" : ""}`}
+                           id="bLinkedIn"
+                           onMouseEnter={ this.bounceEnter }
+                           onMouseLeave={ this.bounceLeave }/>
+                    </a>
+                  </Col>
+                </Row>
+                <Row className="p-1">
+                  { this.props.getContext('FooterQuote') }
+                </Row>
+              </Container>
             </Col>
           </Row>
         </Container>
