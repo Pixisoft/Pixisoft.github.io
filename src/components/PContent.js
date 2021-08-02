@@ -6,7 +6,6 @@
  * $Notice: See LICENSE.txt for modification and distribution information
  *                   Copyright © 2021 by Shen, Jen-Chieh $
  */
-
 import React from 'react';
 import {
   Container, Row, Col,

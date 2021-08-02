@@ -10,6 +10,8 @@ import './Sass/App.scss';
 
 import 'balloon-css';
 
+import 'animate.css/animate.min.css';
+
 ReactDOM.render(<React.StrictMode><App /></React.StrictMode>, document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function

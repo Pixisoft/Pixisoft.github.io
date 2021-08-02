@@ -7,7 +7,7 @@
  *                   Copyright © 2021 by Shen, Jen-Chieh $
  */
 import React from 'react';
-import logo from '../logo.png';
+import logo from '../images/logo.png';
 import {
   Nav, Navbar, NavDropdown,
   Container,
@@ -24,9 +24,7 @@ class PNavbar extends React.Component {
         <Container>
           <Navbar.Brand href="#home">
             <h3>
-              <img alt="Logo"
-                   src={ logo }
-                   width="40" height="40" />
+              <img alt="Logo" src={ logo } width="40" />
               { ' ' + this.props.getContext('Name') }
             </h3>
           </Navbar.Brand>
@@ -49,7 +47,11 @@ class PNavbar extends React.Component {
                 id="nav-dropdown-dark" title="🌍" menuvariant="dark">
                 {
                   this.props.state.data.SupportLanguages.map(lan =>
-                    <NavDropdown.Item onClick={ () => this.props.setLanguage(lan) }>{ lan }</NavDropdown.Item>
+                    <NavDropdown.Item
+                      key={ lan }
+                      onClick={ () => this.props.setLanguage(lan) }>
+                      { lan }
+                    </NavDropdown.Item>
                   )
                 }
               </NavDropdown>

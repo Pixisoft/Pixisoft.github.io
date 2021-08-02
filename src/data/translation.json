@@ -17,8 +17,14 @@
   "TipTeam": [ "!", "", "", "" ],
   "TipContact": [ "Us!", "我們!", "", "" ],
   "CompanyIntro": [
+    "Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem? Massa sed elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante in nibh mauris, cursus.",
     "",
     "",
+    ""
+  ],
+  "FooterQuote": [
+    "We're headquatered in Taipei, Taiwan and work around the world.",
+    "我們位於 台北, 台灣 並且期望與世界各地的人們合作!",
     "",
     ""
   ]

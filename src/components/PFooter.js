@@ -6,16 +6,19 @@
  * $Notice: See LICENSE.txt for modification and distribution information
  *                   Copyright © 2021 by Shen, Jen-Chieh $
  */
-
 import React from 'react';
-import logo from '../logo.png';
+import logo from '../images/logo.png';
+import github from '../images/icons/github.png';
 import {
   Container, Row, Col,
   Button,
 } from 'react-bootstrap';
 
 class PFooter extends React.Component {
-  state = {};
+  state = {
+    bGitHub: false,
+  };
+
   render () {
     return (
       <Container fluid className="bg-dark text-white">
@@ -23,15 +26,24 @@ class PFooter extends React.Component {
           <Row className="justify-content-center">
             <Col className="border border-primary">
               <h1>
-                <img alt="Logo"
-                     src={ logo }
-                     width="80" height="80" />
+                <img alt="Logo" src={ logo } width="80" />
                 { ' ' + this.props.getContext('Name') }
               </h1>
-              Dolor sit amet, consectetur adipiscing elit duis tristique sollicitudin nibh sit. Egestas integer eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit turpis cursus in hac habitasse!
+              { this.props.getContext('CompanyIntro') }
             </Col>
             <Col className="border border-primary">
               Links
+            </Col>
+            <Col className="border border-primary text-center p-5">
+              <a href="https://github.com/Pixisoft">
+                <img alt="GitHub" src={ github } width="50"
+                     className={`${this.state.bGitHub ? "animate__animated animate__heartBeat" : ""}`}
+                     id="bGitHub"
+                     onMouseEnter={ this.bounceEnter }
+                     onMouseLeave={ this.bounceLeave }/>
+              </a>
+              <br/><br/>
+              { this.props.getContext('FooterQuote') }
             </Col>
           </Row>
         </Container>
@@ -41,6 +53,9 @@ class PFooter extends React.Component {
       </Container>
     );
   }
+
+  bounceEnter = (key) => { this.setState({ [key.target.id]: true }); }
+  bounceLeave = (key) => { this.setState({ [key.target.id]: false }); }
 }
 
 export default PFooter;
