@@ -10,7 +10,14 @@
 /*------------------------------------------------------------------------------
  * Dear Facebook and React Developers,
  *
+ * Thanks for this fascinating library, React.js. With this such a famous tool,
+ * it's a shame to see that you cannot load image dynamically through path as
+ * a string.
  *
+ * Hence I have created this file to help us load all images at a place, so it
+ * can be used in other React components. With that being said, this class is
+ * totally unnecessary if React.js has already correctly implemented the dynamic
+ * loading for media files.
  *
  * Best,
  * Jen-Chieh Shen
