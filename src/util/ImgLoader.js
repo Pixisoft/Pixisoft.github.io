@@ -10,18 +10,21 @@
 /*------------------------------------------------------------------------------
  * Dear Facebook and React Developers,
  *
- * 
+ *
  *
  * Best,
  * Jen-Chieh Shen
  * Last Edit: 2021-08-03
  ------------------------------------------------------------------------------*/
-import unity from '../images/services/unity.png';
+import gamedev from '../images/services/gamedev.png';
+import webdev from '../images/services/webdev.png';
+import tooldev from '../images/services/tooldev.png';
+import qatest from '../images/services/qatest.png';
 
 export var GetServiceIcon = function(key) {
-  if (key === 'GameDev') return unity;
-  if (key === 'WebDev') return unity;
-  if (key === 'ToolDev') return unity;
-  if (key === 'QATest') return unity;
+  if (key === 'GameDev') return gamedev;
+  if (key === 'WebDev') return webdev;
+  if (key === 'ToolDev') return tooldev;
+  if (key === 'QATest') return qatest;
   return null;
 };
