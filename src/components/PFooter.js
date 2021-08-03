@@ -35,17 +35,14 @@ class PFooter extends React.Component {
       <Container fluid className="bg-dark text-white">
         <Container className="p-4">
           <Row>
-            <Col className="d-none d-lg-block">
+            <Col className="d-none d-lg-block" xxl={8}>
               <h1>
                 <img alt="Logo" src={ logo } width="80" />
                 { ' ' + this.props.getContext('Direct.Name') }
               </h1>
               { this.props.getContext('Company.IntroFooter') }
             </Col>
-            <Col className="d-none d-lg-block border border-primary">
-              LEGAL | Privacy Policy | Terms of Use
-            </Col>
-            <Col className="text-center justify-content-center align-self-center">
+            <Col className="text-center justify-content-center align-self-center" xl={4}>
               <Container>
                 <Row className="p-4">
                   <Col>
@@ -88,6 +85,13 @@ class PFooter extends React.Component {
                 <Row className="p-1">
                   <Col className="text-center justify-content-center align-self-center">
                     { this.props.getContext('FooterQuote') }
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <a href="">LEGAL</a> | { ' ' }
+                    <a href="">Privacy Policy</a> | { ' ' }
+                    <a href="">Terms of Use</a>
                   </Col>
                 </Row>
               </Container>
