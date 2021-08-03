@@ -20,54 +20,44 @@ import unity from '../images/services/unity.png';
  */
 class PServices extends React.Component {
   state = {};
+
   render () {
+    let table = [];
+    const columnMax = 3;
+    let columns = [];
+    let services = Object.keys(this.props.state.data.Services);
+
+    for (let count = 1; count <= services.length; ++count) {
+      columns.push(services[count - 1]);
+      if ((count % columnMax) === 0) {
+        table.push (this.renderRow(columns));
+        columns = [];
+      }
+    }
+
+    if (columns.length !== 0) {
+      table.push (this.renderRow(columns));
+    }
+
+    return (<Container>{ table }</Container>);
+  }
+
+  renderRow(columns) {
     return (
-      <Container>
-        <Row className="justify-content-md-center">
-          <Col>
-            <Container className="rounded border-top border-primary border-5 shadow p-3">
-              <img alt="GameDev" src={ unity } width="80" />
-              <br/><br/>
-              <h4>{ this.props.getContext('Services.GameDev.Title') }</h4>
-              { this.props.getContext('Services.GameDev.Text') }
-            </Container>
-          </Col>
-          <Col>
-            <Container className="rounded border-top border-primary border-5 shadow p-3">
-              <img alt="GameDev" src={ unity } width="80" />
-              <br/><br/>
-              <h4>{ this.props.getContext('Services.GameDev.Title') }</h4>
-              { this.props.getContext('Services.GameDev.Text') }
-            </Container>
-          </Col>
-          <Col>
-            <Container className="rounded border-top border-primary border-5 shadow p-3">
-              <img alt="GameDev" src={ unity } width="80" />
-              <br/><br/>
-              <h4>{ this.props.getContext('Services.GameDev.Title') }</h4>
-              { this.props.getContext('Services.GameDev.Text') }
-            </Container>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Container className="rounded border-top border-primary border-5 shadow p-3">
-              <img alt="GameDev" src={ unity } width="80" />
-              <br/><br/>
-              <h4>{ this.props.getContext('Services.GameDev.Title') }</h4>
-              { this.props.getContext('Services.GameDev.Text') }
-            </Container>
-          </Col>
-          <Col>
-            <Container className="rounded border-top border-primary border-5 shadow p-3">
-              <img alt="GameDev" src={ unity } width="80" />
-              <br/><br/>
-              <h4>{ this.props.getContext('Services.GameDev.Title') }</h4>
-              { this.props.getContext('Services.GameDev.Text') }
-            </Container>
-          </Col>
-        </Row>
-      </Container>
+      <Row key="_">
+        {
+          columns.map(service =>
+            <Col key="_">
+              <Container className="rounded border-top border-primary border-5 shadow m-3 p-3">
+                <img alt="GameDev" src={ unity } width="80" />
+                <br/><br/>
+                <h4>{ this.props.getContext('Services.' + service + '.Title') }</h4>
+                { this.props.getContext('Services.' + service + '.Text') }
+              </Container>
+            </Col>
+          )
+        }
+      </Row>
     );
   }
 }

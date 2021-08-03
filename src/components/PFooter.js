@@ -11,6 +11,8 @@ import {
   Container, Row, Col,
 } from 'react-bootstrap';
 
+import ReactHtmlParser from 'react-html-parser';
+
 import logo from '../images/logo.png';
 import github from '../images/icons/github.png';
 import youtube from '../images/icons/youtube.png';
@@ -31,7 +33,7 @@ class PFooter extends React.Component {
   render () {
     return (
       <Container fluid className="bg-dark text-white">
-        <Container>
+        <Container className="p-4">
           <Row>
             <Col className="d-none d-lg-block">
               <h1>
@@ -41,7 +43,8 @@ class PFooter extends React.Component {
               { this.props.getContext('Company.IntroFooter') }
             </Col>
             <Col className="d-none d-lg-block border border-primary">
-              Links
+              Privacy Policy
+              Terms of Use
             </Col>
             <Col className="text-center justify-content-center align-self-center">
               <Container>
@@ -93,7 +96,11 @@ class PFooter extends React.Component {
           </Row>
         </Container>
         <Row className="text-center p-3" style={{backgroundColor: "#121416"}}>
-          <Col>{ this.props.getContext('Copyright') }</Col>
+          <Col>
+            { this.props.getContext('Copyright') }
+            <br/>
+            { ReactHtmlParser(this.props.getContext('Trademark')) }
+          </Col>
         </Row>
       </Container>
     );

@@ -1,9 +1,7 @@
 {
   "SupportLanguages": [
     "English",
-    "中文",
-    "日本語",
-    "한국어"
+    "中文"
   ],
   "Direct": {
     "Languages": [ "Languages", "語言", "言語", "언어"],
@@ -36,28 +34,24 @@
   },
   "Copyright": [
     "© 2021 Pixisoft Inc. All rights reserved.",
-    "© 2021 Pixisoft Inc. All rights reserved.",
-    "© 2021 Pixisoft Inc. All rights reserved.",
     "© 2021 Pixisoft Inc. All rights reserved."
+  ],
+  "Trademark": [
+    "All <b>trademarks</b> referenced herein are the properties of their respective owners.",
+    "All <b>trademarks</b> referenced herein are the properties of their respective owners."
   ],
   "FooterQuote": [
     "We're headquatered in Taipei, Taiwan and work around the world. 🎉",
-    "我們位於 台北, 台灣 並且期望與世界各地的人們合作! 🎉",
-    "",
-    ""
+    "我們位於 台北, 台灣 並且期望與世界各地的人們合作! 🎉"
   ],
   "Services": {
     "GameDev": {
       "Title": [
         "Game Development",
-        "遊戲開發",
-        "",
-        ""
+        "遊戲開發"
       ],
       "Text": [
         "Aliquet risus feugiat in ante metus, dictum at tempor commodo, ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia at quis risus sed vulputate! Cursus metus aliquam eleifend mi!",
-        "",
-        "",
         ""
       ]
     }
