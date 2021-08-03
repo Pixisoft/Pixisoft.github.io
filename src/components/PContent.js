@@ -20,7 +20,9 @@ class PContent extends React.Component {
   render () {
     return (
       <Container className="text-center">
-        <h2>Services</h2>
+        <br/><h1>Company</h1><br/>
+        { this.props.getContext('Company.Intro') }
+        <br/><h1>Services</h1><br/>
         <PServices getContext={ this.props.getContext } />
         <br/>
       </Container>

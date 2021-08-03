@@ -5,22 +5,40 @@
     "日本語",
     "한국어"
   ],
-  "Languages": [ "Languages", "語言", "言語", "언어"],
-  "Title": ["Official Page", "官方首頁", "公式ホームページ", "공식 홈페이지"],
-  "Name": [ "Pixisoft", "皮克西軟體", "Pixisoft", "Pixisoft" ],
-  "Company": [ "Company", "公司", "会社", "회사" ],
-  "Services": [ "Services", "服務", "サービス", "서비스" ],
-  "Team": [ "Team", "團隊", "チーム", "팀" ],
-  "Contact": [ "Contact", "聯絡", "コンタクト", "연락하다" ],
-  "TipCompany": [ "!", "", "", "" ],
-  "TipServices": [ "!", "", "", "" ],
-  "TipTeam": [ "!", "", "", "" ],
-  "TipContact": [ "Us!", "我們!", "", "" ],
-  "CompanyIntro": [
-    "Pixisoft is a studio that focuses on supporting in Software Development field.",
-    "",
-    "",
-    ""
+  "Direct": {
+    "Languages": [ "Languages", "語言", "言語", "언어"],
+    "Title": ["Official Page", "官方首頁", "公式ホームページ", "공식 홈페이지"],
+    "Name": [ "Pixisoft", "皮克西軟體", "Pixisoft", "Pixisoft" ],
+    "Company": [ "Company", "公司", "会社", "회사" ],
+    "Services": [ "Services", "服務", "サービス", "서비스" ],
+    "Team": [ "Team", "團隊", "チーム", "팀" ],
+    "Contact": [ "Contact", "聯絡", "コンタクト", "연락하다" ]
+  },
+  "Tip": {
+    "Company": [ "!", "", "", "" ],
+    "Services": [ "!", "", "", "" ],
+    "Team": [ "!", "", "", "" ],
+    "Contact": [ "Us!", "我們!", "", "" ]
+  },
+  "Company": {
+    "Intro": [
+      "Elementum integer enim neque, volutpat ac tincidunt vitae, semper quis lectus nulla at volutpat diam ut venenatis tellus in. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque?",
+      "",
+      "",
+      ""
+    ],
+    "IntroFooter": [
+      "Pixisoft is a studio that focuses on supporting in Software Development field.",
+      "",
+      "",
+      ""
+    ]
+  },
+  "Copyright": [
+    "© 2021 Pixisoft Inc. All rights reserved.",
+    "© 2021 Pixisoft Inc. All rights reserved.",
+    "© 2021 Pixisoft Inc. All rights reserved.",
+    "© 2021 Pixisoft Inc. All rights reserved."
   ],
   "FooterQuote": [
     "We're headquatered in Taipei, Taiwan and work around the world. 🎉",
@@ -28,16 +46,20 @@
     "",
     ""
   ],
-  "GameDevelopment_Title": [
-    "Game Development",
-    "遊戲開發",
-    "",
-    ""
-  ],
-  "GameDevelopment_Text": [
-    "Aliquet risus feugiat in ante metus, dictum at tempor commodo, ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia at quis risus sed vulputate! Cursus metus aliquam eleifend mi!",
-    "",
-    "",
-    ""
-  ]
+  "Services": {
+    "GameDev": {
+      "Title": [
+        "Game Development",
+        "遊戲開發",
+        "",
+        ""
+      ],
+      "Text": [
+        "Aliquet risus feugiat in ante metus, dictum at tempor commodo, ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia at quis risus sed vulputate! Cursus metus aliquam eleifend mi!",
+        "",
+        "",
+        ""
+      ]
+    }
+  }
 }

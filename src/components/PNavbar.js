@@ -25,24 +25,24 @@ class PNavbar extends React.Component {
           <Navbar.Brand href="#home">
             <h3>
               <img alt="Logo" src={ logo } width="40"/>
-              { ' ' + this.props.getContext('Name') }
+              { ' ' + this.props.getContext('Direct.Name') }
             </h3>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-dark"/>
           <Navbar.Collapse id="navbar-dark">
             <Nav className="container-fluid justify-content-end">
               <Button variant="dark" data-balloon-pos="down"
-                      aria-label={ this.props.getContext('TipCompany') }>
-                { this.props.getContext('Company') }</Button>
+                      aria-label={ this.props.getContext('Tip.Company') }>
+                { this.props.getContext('Direct.Company') }</Button>
               <Button variant="dark" data-balloon-pos="down"
-                      aria-label={ this.props.getContext('TipServices') }>
-                { this.props.getContext('Services') }</Button>
+                      aria-label={ this.props.getContext('Tip.Services') }>
+                { this.props.getContext('Direct.Services') }</Button>
               <Button variant="dark" data-balloon-pos="down" disabled
-                      aria-label={ this.props.getContext('TipTeam') }>
-                { this.props.getContext('Team') }</Button>
+                      aria-label={ this.props.getContext('Tip.Team') }>
+                { this.props.getContext('Direct.Team') }</Button>
               <Button variant="dark" data-balloon-pos="down"
-                      aria-label={ this.props.getContext('TipContact') }>
-                { this.props.getContext('Contact') }</Button>
+                      aria-label={ this.props.getContext('Tip.Contact') }>
+                { this.props.getContext('Direct.Contact') }</Button>
               <NavDropdown
                 id="nav-dropdown-dark" title="🌍" menuvariant="dark">
                 {

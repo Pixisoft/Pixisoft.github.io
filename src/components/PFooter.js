@@ -33,14 +33,14 @@ class PFooter extends React.Component {
       <Container fluid className="bg-dark text-white">
         <Container>
           <Row>
-            <Col className="border border-primary">
+            <Col className="d-none d-lg-block">
               <h1>
                 <img alt="Logo" src={ logo } width="80" />
-                { ' ' + this.props.getContext('Name') }
+                { ' ' + this.props.getContext('Direct.Name') }
               </h1>
-              { this.props.getContext('CompanyIntro') }
+              { this.props.getContext('Company.IntroFooter') }
             </Col>
-            <Col className="border border-primary">
+            <Col className="d-none d-lg-block border border-primary">
               Links
             </Col>
             <Col className="text-center justify-content-center align-self-center">
@@ -93,7 +93,7 @@ class PFooter extends React.Component {
           </Row>
         </Container>
         <Row className="text-center p-3" style={{backgroundColor: "#121416"}}>
-          <Col>© 2021 Pixisoft Inc. All rights reserved.</Col>
+          <Col>{ this.props.getContext('Copyright') }</Col>
         </Row>
       </Container>
     );

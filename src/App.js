@@ -49,14 +49,20 @@ class App extends React.Component {
    * @returns { string } A string that has been translated from data source.
    */
   getContext = (key) => {
-    return this.state.data[key][this.state.language_id];
+    let split = key.split('.');
+    let obj = this.state.data;
+    for (let count = 0; count < split.length; ++count) {
+      let current = split[count];
+      obj = obj[current];
+    }
+    return obj[this.state.language_id];
   }
 
   /**
    * Update title with corresponding language.
    */
   updateTitle() {
-    document.title = this.getContext('Name') + ' - ' + this.getContext('Title');
+    document.title = this.getContext('Direct.Name') + ' - ' + this.getContext('Direct.Title');
   }
 }
 

@@ -22,25 +22,49 @@ class PServices extends React.Component {
   state = {};
   render () {
     return (
-      <Container className="d-flex justify-content-center">
+      <Container>
+        <Row className="justify-content-md-center">
+          <Col>
+            <Container className="rounded border-top border-primary border-5 shadow p-3">
+              <img alt="GameDev" src={ unity } width="80" />
+              <br/><br/>
+              <h4>{ this.props.getContext('Services.GameDev.Title') }</h4>
+              { this.props.getContext('Services.GameDev.Text') }
+            </Container>
+          </Col>
+          <Col>
+            <Container className="rounded border-top border-primary border-5 shadow p-3">
+              <img alt="GameDev" src={ unity } width="80" />
+              <br/><br/>
+              <h4>{ this.props.getContext('Services.GameDev.Title') }</h4>
+              { this.props.getContext('Services.GameDev.Text') }
+            </Container>
+          </Col>
+          <Col>
+            <Container className="rounded border-top border-primary border-5 shadow p-3">
+              <img alt="GameDev" src={ unity } width="80" />
+              <br/><br/>
+              <h4>{ this.props.getContext('Services.GameDev.Title') }</h4>
+              { this.props.getContext('Services.GameDev.Text') }
+            </Container>
+          </Col>
+        </Row>
         <Row>
-          <Col className="border border-primary">
-            <img alt="GameDev" src={ unity } width="80" />
-            <br/><br/>
-            <h4>{ this.props.getContext('GameDevelopment_Title') }</h4>
-            { this.props.getContext('GameDevelopment_Text') }
+          <Col>
+            <Container className="rounded border-top border-primary border-5 shadow p-3">
+              <img alt="GameDev" src={ unity } width="80" />
+              <br/><br/>
+              <h4>{ this.props.getContext('Services.GameDev.Title') }</h4>
+              { this.props.getContext('Services.GameDev.Text') }
+            </Container>
           </Col>
           <Col>
-            <img alt="GameDev" src={ unity } width="80" />
-            <br/><br/>
-            <h4>{ this.props.getContext('GameDevelopment_Title') }</h4>
-            { this.props.getContext('GameDevelopment_Text') }
-          </Col>
-          <Col>
-            <img alt="GameDev" src={ unity } width="80" />
-            <br/><br/>
-            <h4>{ this.props.getContext('GameDevelopment_Title') }</h4>
-            { this.props.getContext('GameDevelopment_Text') }
+            <Container className="rounded border-top border-primary border-5 shadow p-3">
+              <img alt="GameDev" src={ unity } width="80" />
+              <br/><br/>
+              <h4>{ this.props.getContext('Services.GameDev.Title') }</h4>
+              { this.props.getContext('Services.GameDev.Text') }
+            </Container>
           </Col>
         </Row>
       </Container>
