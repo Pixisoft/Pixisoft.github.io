@@ -88,10 +88,14 @@ class PFooter extends React.Component {
                   </Col>
                 </Row>
                 <Row>
+                  <Col className="border border-primary">
+                    <a href="#home">LEGAL</a>
+                  </Col>
                   <Col>
-                    <a href="">LEGAL</a> | { ' ' }
-                    <a href="">Privacy Policy</a> | { ' ' }
-                    <a href="">Terms of Use</a>
+                    <a href="#home">Privacy Policy</a>
+                  </Col>
+                  <Col>
+                    <a href="#home">Terms of Use</a>
                   </Col>
                 </Row>
               </Container>
