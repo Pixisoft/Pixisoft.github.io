@@ -43,8 +43,7 @@ class PFooter extends React.Component {
               { this.props.getContext('Company.IntroFooter') }
             </Col>
             <Col className="d-none d-lg-block border border-primary">
-              Privacy Policy
-              Terms of Use
+              LEGAL | Privacy Policy | Terms of Use
             </Col>
             <Col className="text-center justify-content-center align-self-center">
               <Container>

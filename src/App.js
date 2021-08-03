@@ -48,13 +48,14 @@ class App extends React.Component {
    * @param { string } key - is a json identity.
    * @returns { string } A string that has been translated from data source.
    */
-  getContext = (key) => {
+  getContext = (key, pure = false) => {
     let split = key.split('.');
     let obj = this.state.data;
     for (let count = 0; count < split.length; ++count) {
       let current = split[count];
       obj = obj[current];
     }
+    if (pure === true) return obj;
     return obj[this.state.language_id];
   }
 

@@ -11,7 +11,7 @@ import {
   Container, Row, Col,
 } from 'react-bootstrap';
 
-import unity from '../images/services/unity.png';
+import { GetServiceIcon } from '../util/ImgLoader.js';
 
 /**
  * Services section.
@@ -19,7 +19,9 @@ import unity from '../images/services/unity.png';
  * Here we introduces the software services we provided to our customers.
  */
 class PServices extends React.Component {
-  state = {};
+  state = {
+    url: '',
+  };
 
   render () {
     let table = [];
@@ -44,21 +46,38 @@ class PServices extends React.Component {
 
   renderRow(columns) {
     return (
-      <Row key="_">
-        {
-          columns.map(service =>
-            <Col key="_">
-              <Container className="rounded border-top border-primary border-5 shadow m-3 p-3">
-                <img alt="GameDev" src={ unity } width="80" />
-                <br/><br/>
-                <h4>{ this.props.getContext('Services.' + service + '.Title') }</h4>
-                { this.props.getContext('Services.' + service + '.Text') }
-              </Container>
-            </Col>
-          )
-        }
+      <Row key={ columns }>
+        { columns.map(service => this.renderColumn(service)) }
+        { this.renderColumnsEmpty(columns) }
       </Row>
     );
+  }
+
+  renderColumn(service) {
+    return (
+      <Col key={ service }>
+        <Container className="rounded border-top border-primary border-5 shadow m-3 p-3">
+          <img alt={ service } src={ GetServiceIcon(service) }
+               width="80" />
+          <br/><br/>
+          <h4>{ this.props.getContext('Services.' + service + '.Title') }</h4>
+          { this.props.getContext('Services.' + service + '.Text') }
+        </Container>
+      </Col>
+    );
+  }
+
+  renderColumnsEmpty(columns) {
+    let diff = 3 - columns.length;
+    let table = [];
+    for (let count = 0; count < diff; ++count) {
+      table.push(this.renderColumnEmpty(count));
+    }
+    return (<>{ table }</>);
+  }
+
+  renderColumnEmpty(key) {
+    return (<Col key={ key }></Col>);
   }
 }
 

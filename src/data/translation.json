@@ -46,9 +46,43 @@
   ],
   "Services": {
     "GameDev": {
+      "Image": "../images/services/unity.png",
       "Title": [
         "Game Development",
         "遊戲開發"
+      ],
+      "Text": [
+        "Aliquet risus feugiat in ante metus, dictum at tempor commodo, ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia at quis risus sed vulputate! Cursus metus aliquam eleifend mi!",
+        ""
+      ]
+    },
+    "WebDev": {
+      "Image": "../images/services/unity.png",
+      "Title": [
+        "Web Development",
+        "網頁開發"
+      ],
+      "Text": [
+        "Aliquet risus feugiat in ante metus, dictum at tempor commodo, ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia at quis risus sed vulputate! Cursus metus aliquam eleifend mi!",
+        ""
+      ]
+    },
+    "ToolDev": {
+      "Image": "../images/services/unity.png",
+       "Title": [
+        "Tool Development",
+        "工具開發"
+      ],
+      "Text": [
+        "Aliquet risus feugiat in ante metus, dictum at tempor commodo, ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia at quis risus sed vulputate! Cursus metus aliquam eleifend mi!",
+        ""
+      ]
+    },
+    "QATest": {
+      "Image": "../images/services/unity.png",
+       "Title": [
+        "QA & Testing",
+        "品質管控和測試"
       ],
       "Text": [
         "Aliquet risus feugiat in ante metus, dictum at tempor commodo, ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia at quis risus sed vulputate! Cursus metus aliquam eleifend mi!",
