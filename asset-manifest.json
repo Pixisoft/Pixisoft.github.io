@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.193a704d.chunk.css",
-    "main.js": "/static/js/main.be0905df.chunk.js",
-    "main.js.map": "/static/js/main.be0905df.chunk.js.map",
+    "main.js": "/static/js/main.2c533b2d.chunk.js",
+    "main.js.map": "/static/js/main.2c533b2d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2655ba2c.js",
     "runtime-main.js.map": "/static/js/runtime-main.2655ba2c.js.map",
     "static/css/2.562b42ed.chunk.css": "/static/css/2.562b42ed.chunk.css",
@@ -14,7 +14,7 @@
     "static/css/2.562b42ed.chunk.css.map": "/static/css/2.562b42ed.chunk.css.map",
     "static/css/main.193a704d.chunk.css.map": "/static/css/main.193a704d.chunk.css.map",
     "static/js/2.12a129d8.chunk.js.LICENSE.txt": "/static/js/2.12a129d8.chunk.js.LICENSE.txt",
-    "static/media/gamedev.da37e3bd.png": "/static/media/gamedev.da37e3bd.png",
+    "static/media/gamedev.4f5fd17f.png": "/static/media/gamedev.4f5fd17f.png",
     "static/media/github.a2d8c872.png": "/static/media/github.a2d8c872.png",
     "static/media/gmail.964d24a8.ico": "/static/media/gmail.964d24a8.ico",
     "static/media/linkedin.59204961.png": "/static/media/linkedin.59204961.png",
@@ -27,6 +27,6 @@
     "static/css/2.562b42ed.chunk.css",
     "static/js/2.12a129d8.chunk.js",
     "static/css/main.193a704d.chunk.css",
-    "static/js/main.be0905df.chunk.js"
+    "static/js/main.2c533b2d.chunk.js"
   ]
 }
