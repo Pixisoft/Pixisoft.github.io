@@ -7,12 +7,14 @@
  *                   Copyright © 2021 by Shen, Jen-Chieh $
  */
 import React from 'react';
-import logo from '../images/logo.png';
+
 import {
   Nav, Navbar, NavDropdown,
   Container,
   Button,
 } from 'react-bootstrap';
+
+import logo from '../images/logo.png';
 
 /**
  * Navigation bar at the top of the page.

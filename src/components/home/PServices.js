@@ -7,11 +7,12 @@
  *                   Copyright © 2021 by Shen, Jen-Chieh $
  */
 import React from 'react';
+
 import {
   Container, Row, Col,
 } from 'react-bootstrap';
 
-import { GetServiceIcon } from '../util/ImgLoader.js';
+import { GetServiceIcon } from '../../util/ImgLoader.js';
 
 /**
  * Services section.
@@ -41,7 +42,14 @@ class PServices extends React.Component {
       table.push (this.renderRow(columns));
     }
 
-    return (<Container>{ table }</Container>);
+    return (
+      <Container>
+        <Row className="p-5">
+          <h1>{ this.props.getContext('Direct.Services') }</h1>
+          <Container>{ table }</Container>
+        </Row>
+      </Container>
+    );
   }
 
   renderRow(columns) {

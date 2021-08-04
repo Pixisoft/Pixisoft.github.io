@@ -87,17 +87,19 @@ class PFooter extends React.Component {
                     { this.props.getContext('FooterQuote') }
                   </Col>
                 </Row>
-                <Row>
-                  <Col className="border border-primary">
-                    <a href="#home">LEGAL</a>
-                  </Col>
-                  <Col>
-                    <a href="#home">Privacy Policy</a>
-                  </Col>
-                  <Col>
-                    <a href="#home">Terms of Use</a>
-                  </Col>
-                </Row>
+                <Container className="mt-3">
+                  <Row className="justify-content-md-center">
+                    <Col>
+                      <a href="#home">LEGAL</a>
+                    </Col>
+                    <Col>
+                      <a href="#home">Privacy Policy</a>
+                    </Col>
+                    <Col>
+                      <a href="#home">Terms of Use</a>
+                    </Col>
+                  </Row>
+                </Container>
               </Container>
             </Col>
           </Row>

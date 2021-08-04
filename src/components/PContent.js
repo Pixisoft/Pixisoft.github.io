@@ -7,10 +7,13 @@
  *                   Copyright © 2021 by Shen, Jen-Chieh $
  */
 import React from 'react';
-import PServices from './PServices.js';
+
 import {
   Container,
 } from 'react-bootstrap';
+
+import PCompany from './home/PCompany.js';
+import PServices from './home/PServices.js';
 
 /**
  * Everything except Navbar and Footer components.
@@ -20,13 +23,10 @@ class PContent extends React.Component {
   render () {
     return (
       <Container className="text-center">
-        <h1>{ this.props.getContext('Direct.Company') }</h1>
-        { this.props.getContext('Company.Intro') }
-        <br/>
-        <h1>{ this.props.getContext('Direct.Services') }</h1>
+        <PCompany state={ this.props.state }
+                  getContext={ this.props.getContext } />
         <PServices state={ this.props.state }
                    getContext={ this.props.getContext } />
-        <br/>
       </Container>
     );
   }
