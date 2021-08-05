@@ -56,8 +56,8 @@
         ""
       ],
       "Badges": [
-        ["Unity"],
-        ["Unity"]
+        ["Unity", "Cross-Platform"],
+        ["Unity", "跨平台開發"]
       ]
     },
     "WebDev": {
@@ -71,8 +71,8 @@
         ""
       ],
       "Badges": [
-        ["React.js"],
-        ["React.js"]
+        ["Basic", "React.js"],
+        ["基礎", "React.js"]
       ]
     },
     "ToolDev": {
@@ -102,7 +102,7 @@
       ],
       "Badges": [
         ["Excel", "git", "Source-Control"],
-        ["Excel", "git", "Source-Control"]
+        ["Excel", "git", "版本控制"]
       ]
     }
   },
