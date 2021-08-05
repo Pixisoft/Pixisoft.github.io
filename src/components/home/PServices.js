@@ -71,7 +71,11 @@ class PServices extends React.Component {
           <br/><br/>
           <h4>{ this.props.getContext('Services.' + service + '.Title') }</h4>
           { this.props.getContext('Services.' + service + '.Text') }
-          { this.renderBadges(service) }
+          <Container className="pt-2 d-flex">
+            <Row className="justify-content-start">
+              { this.renderBadges(service) }
+            </Row>
+          </Container>
         </Container>
       </Col>
     );
@@ -92,15 +96,12 @@ class PServices extends React.Component {
 
   renderBadges(service) {
     let badges = this.props.getContext('Services.' + service + '.Badges');
-    return (
-      <>
-        {
-          badges.map(badge =>
-            <Badge pill className="bg-primary">{ badge }</Badge>
-          )
-        }
-      </>
-    );
+    return (<>{ badges.map(badge =>
+      <Col key={badge} className="p-1">
+        <Badge key={ badge }
+               className="bg-success rounded-pill">{ badge }</Badge>
+      </Col>
+    ) }</>);
   }
 }
 
