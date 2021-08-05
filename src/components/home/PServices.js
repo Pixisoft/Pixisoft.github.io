@@ -9,6 +9,7 @@
 import React from 'react';
 
 import {
+  Badge,
   Container, Row, Col,
 } from 'react-bootstrap';
 
@@ -43,7 +44,7 @@ class PServices extends React.Component {
     }
 
     return (
-      <Container>
+      <Container className="text-center">
         <Row className="p-5">
           <h1>{ this.props.getContext('Direct.Services') }</h1>
           <Container>{ table }</Container>
@@ -70,6 +71,7 @@ class PServices extends React.Component {
           <br/><br/>
           <h4>{ this.props.getContext('Services.' + service + '.Title') }</h4>
           { this.props.getContext('Services.' + service + '.Text') }
+          { this.renderBadges(service) }
         </Container>
       </Col>
     );
@@ -86,6 +88,19 @@ class PServices extends React.Component {
 
   renderColumnEmpty(key) {
     return (<Col key={ key }></Col>);
+  }
+
+  renderBadges(service) {
+    let badges = this.props.getContext('Services.' + service + '.Badges');
+    return (
+      <>
+        {
+          badges.map(badge =>
+            <Badge pill className="bg-primary">{ badge }</Badge>
+          )
+        }
+      </>
+    );
   }
 }
 

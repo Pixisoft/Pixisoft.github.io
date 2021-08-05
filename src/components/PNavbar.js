@@ -24,7 +24,7 @@ class PNavbar extends React.Component {
     return (
       <Navbar variant="dark" bg="dark" expand="lg">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <h3>
               <img alt="Logo" src={ logo } width="40"/>
               { ' ' + this.props.getContext('Direct.Name') }

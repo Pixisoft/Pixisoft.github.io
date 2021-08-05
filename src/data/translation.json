@@ -56,7 +56,8 @@
         ""
       ],
       "Badges": [
-        "Unity"
+        ["Unity"],
+        ["Unity"]
       ]
     },
     "WebDev": {
@@ -70,7 +71,8 @@
         ""
       ],
       "Badges": [
-        "React.js"
+        ["React.js"],
+        ["React.js"]
       ]
     },
     "ToolDev": {
@@ -84,7 +86,8 @@
         ""
       ],
       "Badges": [
-        ""
+        ["side", "assist"],
+        ["協助", "幫助"]
       ]
     },
     "QATest": {
@@ -98,8 +101,21 @@
         ""
       ],
       "Badges": [
-        "Excel", "git", "Source-Control"
+        ["Excel", "git", "Source-Control"],
+        ["Excel", "git", "Source-Control"]
       ]
     }
-  }
+  },
+  "Legal": [
+    "Legal",
+    ""
+  ],
+  "PrivacyPolicy": [
+    "<h2>Privacy Policy</h2><h6>Updated July 7, 2021</h6><p>We are Novaby Ltd.  We provide digital products including augmented reality applications and experiences that blend digital content into your real world surroundings. In order to do this, we need to collect information about you and your device. The use of the augmented reality features also requires us to access to your camera, location and photo library.</p><p>Protecting your data is important to us.  We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we protect within commercially acceptable means to prevent loss and theft, as well as unauthorised access, disclosure, copying, use or modification. We do not share any personally identifying information publicly or with third-parties, except when required by law.</p><p>Your continued use of our digital products will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, please contact us by email at makeitreal@novaby.com.</p>",
+    ""
+  ],
+  "TermsOfUse": [
+    "Terms of Use",
+    ""
+  ]
 }

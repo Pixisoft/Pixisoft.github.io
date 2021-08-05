@@ -7,6 +7,7 @@
  *                   Copyright © 2021 by Shen, Jen-Chieh $
  */
 import React from 'react';
+
 import {
   Container, Row, Col,
 } from 'react-bootstrap';
@@ -90,13 +91,13 @@ class PFooter extends React.Component {
                 <Container className="mt-3">
                   <Row className="justify-content-md-center">
                     <Col>
-                      <a href="#home">LEGAL</a>
+                      <a href="/legal">LEGAL</a>
                     </Col>
                     <Col>
-                      <a href="#home">Privacy Policy</a>
+                      <a href="/privacy-policy">Privacy Policy</a>
                     </Col>
                     <Col>
-                      <a href="#home">Terms of Use</a>
+                      <a href="/terms-of-use">Terms of Use</a>
                     </Col>
                   </Row>
                 </Container>

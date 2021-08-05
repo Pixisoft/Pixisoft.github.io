@@ -8,12 +8,15 @@
  */
 import React from 'react';
 
+import ReactHtmlParser from 'react-html-parser';
+
 import {
   Container,
 } from 'react-bootstrap';
 
-import PCompany from './home/PCompany.js';
-import PServices from './home/PServices.js';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+import PHome from './PHome.js';
 
 /**
  * Everything except Navbar and Footer components.
@@ -22,12 +25,27 @@ class PContent extends React.Component {
   state = {};
   render () {
     return (
-      <Container className="text-center">
-        <PCompany state={ this.props.state }
-                  getContext={ this.props.getContext } />
-        <PServices state={ this.props.state }
-                   getContext={ this.props.getContext } />
-      </Container>
+      <Router>
+        <Route exact path="/">
+          <PHome state={ this.props.state }
+                 getContext={ this.props.getContext } />
+        </Route>
+        <Route path="/legal">
+          <Container className="p-5">
+            { ReactHtmlParser(this.props.getContext("Legal")) }
+          </Container>
+        </Route>
+        <Route path="/privacy-policy">
+          <Container className="p-5">
+            { ReactHtmlParser(this.props.getContext("PrivacyPolicy")) }
+          </Container>
+        </Route>
+        <Route path="/terms-of-use">
+          <Container className="p-5">
+            { ReactHtmlParser(this.props.getContext("TermsOfUse")) }
+          </Container>
+        </Route>
+      </Router>
     );
   }
 }
