@@ -70,6 +70,8 @@ class PServices extends React.Component {
                width="80" />
           <br/><br/>
           <h4>{ this.props.getContext('Services.' + service + '.Title') }</h4>
+          { this.props.getContext('Services.' + service + '.Stars', true) }
+          <br/>
           { this.props.getContext('Services.' + service + '.Text') }
           <Container className="pt-2 d-flex">
             <Row className="justify-content-start">
