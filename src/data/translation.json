@@ -53,6 +53,16 @@
       "找我們!"
     ]
   },
+  "Carousel": {
+    "Quote": [
+      "| Software Development Company",
+      "| 軟體開發公司"
+    ],
+    "Text": [
+      "We provide custom software development and IT outsourcing services. Our developers build custom software for individuals, startups, and small to medium business.",
+      "我們提供客製化軟體開發和資訊科技外包服務. 我們的工程師會建立客製化產品給予個人, 新創, 和小型企業."
+    ]
+  },
   "Company": {
     "Intro": [
       "Based on many years of experience, we know that every business has a different software and hardware environment. That is why we provide a wide range of software development services. Check out the key services below.",

@@ -39,3 +39,11 @@
 
 .carousel-control-prev { visibility: hidden; }
 .carousel-control-next { visibility: hidden; }
+
+.overlay {
+  position: relative;
+  left: 100%;
+  float: left;
+  top: 0px;
+  z-index: 10;
+}
