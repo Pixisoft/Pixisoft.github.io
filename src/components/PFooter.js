@@ -85,7 +85,7 @@ class PFooter extends React.Component {
                 </Row>
                 <Row className="p-1">
                   <Col className="text-center justify-content-center align-self-center">
-                    { this.props.getContext('FooterQuote') }
+                    { ReactHtmlParser(this.props.getContext('FooterQuote')) }
                   </Col>
                 </Row>
                 <Container className="mt-3">

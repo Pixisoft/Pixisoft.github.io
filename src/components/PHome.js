@@ -12,6 +12,7 @@ import {
   Container,
 } from 'react-bootstrap';
 
+import PCarousel from './home/PCarousel.js';
 import PCompany from './home/PCompany.js';
 import PServices from './home/PServices.js';
 
@@ -19,12 +20,16 @@ class PHome extends React.Component {
   state = {};
   render () {
     return (
-      <Container>
-        <PCompany state={ this.props.state }
-                  getContext={ this.props.getContext } />
-        <PServices state={ this.props.state }
+      <>
+        <PCarousel state={ this.props.state }
                    getContext={ this.props.getContext } />
-      </Container>
+        <Container>
+          <PCompany state={ this.props.state }
+                    getContext={ this.props.getContext } />
+          <PServices state={ this.props.state }
+                     getContext={ this.props.getContext } />
+        </Container>
+      </>
     );
   }
 }

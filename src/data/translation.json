@@ -4,32 +4,63 @@
     "中文"
   ],
   "Direct": {
-    "Languages": [ "Languages", "語言", "言語", "언어"],
-    "Title": ["Official Page", "官方首頁", "公式ホームページ", "공식 홈페이지"],
-    "Name": [ "Pixisoft", "皮克西軟體", "Pixisoft", "Pixisoft" ],
-    "Company": [ "Company", "公司", "会社", "회사" ],
-    "Services": [ "Services", "服務", "サービス", "서비스" ],
-    "Team": [ "Team", "團隊", "チーム", "팀" ],
-    "Contact": [ "Contact", "聯絡", "コンタクト", "연락하다" ]
+    "Languages": [
+      "Languages",
+      "語言"
+    ],
+    "Title": [
+      "Official Page",
+      "官方首頁"
+    ],
+    "Name": [
+      "Pixisoft",
+      "皮克西軟體"
+    ],
+    "Company": [
+      "Company",
+      "公司"
+    ],
+    "Services": [
+      "Services",
+      "服務"
+    ],
+    "Team": [
+      "Team",
+      "團隊"
+    ],
+    "Contact": [
+      "Contact",
+      "聯絡",
+      "コンタクト",
+      "연락하다"
+    ]
   },
   "Tip": {
-    "Company": [ "!", "", "", "" ],
-    "Services": [ "!", "", "", "" ],
-    "Team": [ "!", "", "", "" ],
-    "Contact": [ "Us!", "我們!", "", "" ]
+    "Company": [
+      "About us!",
+      "關於我們!"
+    ],
+    "Services": [
+      "Lookingg for help?",
+      "尋求幫助嗎?"
+    ],
+    "Team": [
+      "Who is here?",
+      "誰在這裡?"
+    ],
+    "Contact": [
+      "Find us!",
+      "找我們!"
+    ]
   },
   "Company": {
     "Intro": [
-      "Elementum integer enim neque, volutpat ac tincidunt vitae, semper quis lectus nulla at volutpat diam ut venenatis tellus in. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque?",
-      "",
-      "",
+      "Based on many years of experience, we know that every business has a different software and hardware environment. That is why we provide a wide range of software development services. Check out the key services below.",
       ""
     ],
     "IntroFooter": [
-      "Pixisoft is a studio that focuses on supporting in Software Development field.",
-      "",
-      "",
-      ""
+      "Pixisoft is an international software development company established in 2021. We provide comprehensive services including, development of mobile applications, web-oriented applicationes, game software development, as well as software integration and updating, support, and maintenance of software applications.",
+      "皮克西是始於2021成立的國際軟體開發公司.我們提供廣泛的軟體開發工程以及服務, 內容包含手機程序開發, 網路業面開發, 遊戲軟體開發, 並且提供軟體整合, 更新, 輔助, 和維護各項軟體的相關服務."
     ]
   },
   "Copyright": [
@@ -57,8 +88,14 @@
       ],
       "Stars": "⭐⭐⭐",
       "Badges": [
-        ["Unity", "Cross-Platform"],
-        ["Unity", "跨平台開發"]
+        [
+          "Unity",
+          "Cross-Platform"
+        ],
+        [
+          "Unity",
+          "跨平台開發"
+        ]
       ]
     },
     "WebDev": {
@@ -73,13 +110,19 @@
       ],
       "Stars": "⭐⭐",
       "Badges": [
-        ["Basic", "React.js"],
-        ["基礎", "React.js"]
+        [
+          "Basic",
+          "React.js"
+        ],
+        [
+          "基礎",
+          "React.js"
+        ]
       ]
     },
     "ToolDev": {
       "Image": "../images/services/unity.png",
-       "Title": [
+      "Title": [
         "Tool Programming",
         "工具編程"
       ],
@@ -89,13 +132,19 @@
       ],
       "Stars": "⭐⭐⭐",
       "Badges": [
-        ["side", "assist"],
-        ["協助", "幫助"]
+        [
+          "side",
+          "assist"
+        ],
+        [
+          "協助",
+          "幫助"
+        ]
       ]
     },
     "QATest": {
       "Image": "../images/services/unity.png",
-       "Title": [
+      "Title": [
         "QA & Testing",
         "品質管控和測試"
       ],
@@ -105,21 +154,31 @@
       ],
       "Stars": "⭐⭐⭐",
       "Badges": [
-        ["Excel", "git", "Source-Control"],
-        ["Excel", "git", "版本控制"]
+        [
+          "Excel",
+          "git",
+          "Source-Control",
+          "CI"
+        ],
+        [
+          "Excel",
+          "git",
+          "版本控制",
+          "持續整合"
+        ]
       ]
     }
   },
   "Legal": [
-    "Legal",
-    ""
+    "Not applicable",
+    "尚無此資訊"
   ],
   "PrivacyPolicy": [
-    "<h2>Privacy Policy</h2><h6>Updated Aug 6, 2021</h6><p>We are Pixisoft.  We provide digital products including augmented reality applications and experiences that blend digital content into your real world surroundings. In order to do this, we need to collect information about you and your device. The use of the augmented reality features also requires us to access to your camera, location and photo library.</p><p>Protecting your data is important to us.  We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we protect within commercially acceptable means to prevent loss and theft, as well as unauthorised access, disclosure, copying, use or modification. We do not share any personally identifying information publicly or with third-parties, except when required by law.</p><p>Your continued use of our digital products will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, please contact us by email at pixisoft.tw@gmail.com.</p>",
-    ""
+    "<h2>Privacy Policy</h2><h6>Updated Aug 6, 2021</h6><p>We are Pixisoft.  We provide digital products including augmented reality applications and experiences that blend digital content into your real world surroundings. In order to do this, we need to collect information about you and your device. The use of the augmented reality features also requires us to access to your camera, location and photo library.</p><p>Protecting your data is important to us.  We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we protect within commercially acceptable means to prevent loss and theft, as well as unauthorised access, disclosure, copying, use or modification. We do not share any personally identifying information publicly or with third-parties, except when required by law.</p><p>Your continued use of our digital products will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, please contact us by email at <a href=\"mailto:pixisoft.tw@gmail.com\">pixisoft.tw@gmail.com</a>.</p>",
+    "請閱覽英文版本"
   ],
   "TermsOfUse": [
-    "<h2>Terms of Use</h2><h6>Updated Aug 6, 2021</h6>",
-    ""
+    "<h2>Terms of Use</h2><h6>Updated Aug 6, 2021</h6><p>Welcome!  We are Pixisoft., a registered corporation in the Taipei, Taiwan. We provide digital products and services included normal application, games, tool, development assitent. In order to do this, we need to collect information about you and your device and access to your camera, location and photo library.</p><p>These Terms of Use (herein referred to as \"Terms\") constitute a legally binding contract that governs your use of this Application and associated Services and Content.</p><p>Your continued use of our digital products constitutes your agreement to these Terms.</p><h4>SAFE AND APPROPRIATE USE</h4><p>Please be mindful of your surroundings and safety while using this App and Services. You agree that your use of this Application is at your own risk.  You agree to abide by the following rules and regulations:</p><p>You will not engage in any activity that may result in injury, death, property damage, nuisance, or liability of any kind or encourage others to do so.</p><p>Do not trespass, or in any manner attempt to gain or gain access to any property or location where you do not have a right or permission to be.</p><p>All applicable federal, state, and local laws apply.</p><h5>AMENDMENTS</h5><p>Pixisoft may modify or amend these Terms at any time.  Amendments will be posted herein. Amendments become effective upon posting.</p><h5>ARBITRATION</h5><p>You agree to submit any claims that you have against us to a binding, final arbitration on an individual basis.</p><h5>RIGHT TO TERMINATE SERVICES</h5><p>At any time and for any reason, we may immediately terminate this agreement; stop offering our Service to you; or deny you from accessing our Services.  All Terms shall survive and you will still be bound by them.</p><h5>LIMITED LICENSE TO USE</h5><p>Pixisoft grants you a limited, nonexclusive, non-transferable, non-sublicensable license to download and install a copy of the Application on a mobile device for your own personal, non-commercial use. You may not copy, modify or create derivative works based on the Application.  You may not distribute, transfer, sublicense, lease, lend or rent the Application to any third party.  You may not reverse engineer, decompile, or disassemble the Application or make the functionality of the Application available to multiple users outside of any multi-user capabilities native to the Application. Pixisoft reserves all rights to the Application not expressly granted to you under these Terms.</p><p>You acknowledge that the Services and Content within the Application are protected by copyright, trademark and other laws of the Taiwan and foreign countries. You acknowledge that Pixisoft and all parties involved in the creation of this Application own the intellectual property herein in accordance with their contractual agreements.  You agree not to remove, alter or obscure any copyright, trademark, service mark or other proprietary rights notices incorporated in or accompanying the Application. Pixisoft grants you a personal, non-commercial, non-exclusive, non-transferable, non-sublicensable revocable, limited license to download, view, display images of text, graphics, photos, videos and interactions within your personal communication channels.  Pixisoft, The AMP, artists and other authoring parties shall be clearly credited.</p><h5>FEEDBACK</h5><p>You may submit feedback to us via email at <a href=\"mailto:pixisoft.tw@gmail.com\">pixisoft.tw@gmail.com</a>.</p><h5>THIRD PARTY WEBSITES AND RESOURCES</h5><p>The Application contains links to third party websites and resources.  Pixisoft provides these links only for convenience and is not responsible for the content, products or services on or available from those websites or resources, or links displayed on those websites.  You assume all risk arising from your use of any third-party websites or resources.</p><h5>ASSIGNMENT</h5><p>We may assign this agreement to any person or entity at any time.  You may not assign this agreement to another person or entity without our written, signed consent.</p><p5>DISCLAIMER OF WARRANTIES</p5><p>You agree that the Services and Content provided via this Application are provided \"as is\" without any warranty of any kind.  We make no claim that the Services will meet your requirements or be available on an uninterrupted, secure or error-free basis.  We make no warranty regarding the quality, accuracy, timeliness, truthfulness, completeness, or reliability of any content.</p><h5>LIMITATION OF LIABILITY</h5><p>To the extent permitted under applicable law, neither Pixisoft nor any other party involved in creating, producing, or delivering the Application and associated Services or Content will be liable to you for any indirect, incidental, special, punitive, exemplary or consequential damages, including lost profits, loss of data or goodwill, service interruptions, computer damage or system failure or the costs of substitute services arising out of the download or use of the Application.</p><h5>SEVERABILITY</h5><p>If any provision of these Terms is held in violation or unenforceable, that provision will be enforced to the maximum extent permissible and the other provisions of these Terms will remain in full force and effect.</p><h5>FORCE MAJEURE</h5><p>Neither Pixisoft, any user, nor any other party involved in creating, producing or delivering the Application or its associated Service or Content shall be liable with respect to any damages, injuries, non-performance or delay in performance by reason of any act of God, weather, fire, floor, acts of terror, foreign entity, server or network failure, governmental order or regulation, trade dispute or any other cause beyond its respective control.</p><h5>CONTACT INFORMATION</h5><p>If you have any questions about these Terms, please contact Pixisoft. at <a href=\"mailto:pixisoft.tw@gmail.com\">pixisoft.tw@gmail.com</a></p>",
+    "請閱覽英文版本"
   ]
 }

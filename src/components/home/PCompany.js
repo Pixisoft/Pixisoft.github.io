@@ -13,15 +13,19 @@ import {
   Row, Col,
 } from 'react-bootstrap';
 
+import ReactHtmlParser from 'react-html-parser';
+
 class PCompany extends React.Component {
   state = {};
   render () {
     return (
       <Container id="company" className="text-center">
-        <Row className="p-5">
+        <Row className="p-4">
           <Col>
             <h1>{ this.props.getContext('Direct.Company') }</h1>
-            { this.props.getContext('Company.Intro') }
+            <div className="blockquote">
+              { ReactHtmlParser(this.props.getContext('Company.Intro')) }
+            </div>
           </Col>
         </Row>
       </Container>

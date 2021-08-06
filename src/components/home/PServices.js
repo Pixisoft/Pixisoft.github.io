@@ -45,7 +45,7 @@ class PServices extends React.Component {
 
     return (
       <Container id="services" className="text-center">
-        <Row className="p-5">
+        <Row className="pb-5">
           <h1>{ this.props.getContext('Direct.Services') }</h1>
           <Container>{ table }</Container>
         </Row>
