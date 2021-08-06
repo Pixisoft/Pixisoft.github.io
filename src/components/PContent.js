@@ -14,7 +14,7 @@ import {
   Container,
 } from 'react-bootstrap';
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 
 import PHome from './PHome.js';
 
@@ -25,7 +25,7 @@ class PContent extends React.Component {
   state = {};
   render () {
     return (
-      <Router>
+      <HashRouter>
         <Route exact path="/">
           <PHome state={ this.props.state }
                  getContext={ this.props.getContext } />
@@ -40,12 +40,12 @@ class PContent extends React.Component {
             { ReactHtmlParser(this.props.getContext("PrivacyPolicy")) }
           </Container>
         </Route>
-        <Route path={ process.env.PUBLIC_URL + "/terms-of-use" }>
+        <Route path="/terms-of-use">
           <Container className="p-5">
             { ReactHtmlParser(this.props.getContext("TermsOfUse")) }
           </Container>
         </Route>
-      </Router>
+      </HashRouter>
     );
   }
 }

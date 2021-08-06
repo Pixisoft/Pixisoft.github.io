@@ -14,8 +14,6 @@ import {
 
 import ReactHtmlParser from 'react-html-parser';
 
-import { BrowserRouter as Link } from "react-router-dom";
-
 import logo from '../images/logo.png';
 import github from '../images/icons/github.png';
 import youtube from '../images/icons/youtube.png';
@@ -93,13 +91,13 @@ class PFooter extends React.Component {
                 <Container className="mt-3">
                   <Row className="justify-content-md-center">
                     <Col>
-                      <a href="/legal">LEGAL</a>
+                      <a href="#/legal">LEGAL</a>
                     </Col>
                     <Col>
-                      <a href="/privacy-policy">Privacy Policy</a>
+                      <a href="#/privacy-policy">Privacy Policy</a>
                     </Col>
                     <Col>
-                      <Link to={process.env.PUBLIC_URL + '/'}>Terms of Use</Link>
+                      <a href="#/terms-of-use">Terms of Use</a>
                     </Col>
                   </Row>
                 </Container>
