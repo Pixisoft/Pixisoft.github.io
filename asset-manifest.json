@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.193a704d.chunk.css",
-    "main.js": "/static/js/main.8ae99a32.chunk.js",
-    "main.js.map": "/static/js/main.8ae99a32.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.55c0b4cc.js",
-    "runtime-main.js.map": "/static/js/runtime-main.55c0b4cc.js.map",
+    "main.css": "/static/css/main.637f5c6f.chunk.css",
+    "main.js": "/static/js/main.61c8b64a.chunk.js",
+    "main.js.map": "/static/js/main.61c8b64a.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cb1a35c9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cb1a35c9.js.map",
     "static/css/2.562b42ed.chunk.css": "/static/css/2.562b42ed.chunk.css",
-    "static/js/2.1f100002.chunk.js": "/static/js/2.1f100002.chunk.js",
-    "static/js/2.1f100002.chunk.js.map": "/static/js/2.1f100002.chunk.js.map",
-    "static/js/3.3d6edb3a.chunk.js": "/static/js/3.3d6edb3a.chunk.js",
-    "static/js/3.3d6edb3a.chunk.js.map": "/static/js/3.3d6edb3a.chunk.js.map",
+    "static/js/2.4159cde4.chunk.js": "/static/js/2.4159cde4.chunk.js",
+    "static/js/2.4159cde4.chunk.js.map": "/static/js/2.4159cde4.chunk.js.map",
+    "static/js/3.9f39d125.chunk.js": "/static/js/3.9f39d125.chunk.js",
+    "static/js/3.9f39d125.chunk.js.map": "/static/js/3.9f39d125.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.562b42ed.chunk.css.map": "/static/css/2.562b42ed.chunk.css.map",
-    "static/css/main.193a704d.chunk.css.map": "/static/css/main.193a704d.chunk.css.map",
-    "static/js/2.1f100002.chunk.js.LICENSE.txt": "/static/js/2.1f100002.chunk.js.LICENSE.txt",
+    "static/css/main.637f5c6f.chunk.css.map": "/static/css/main.637f5c6f.chunk.css.map",
+    "static/js/2.4159cde4.chunk.js.LICENSE.txt": "/static/js/2.4159cde4.chunk.js.LICENSE.txt",
+    "static/media/1.ade218fc.png": "/static/media/1.ade218fc.png",
+    "static/media/2.ee13cb6a.png": "/static/media/2.ee13cb6a.png",
+    "static/media/3.8bf7556f.png": "/static/media/3.8bf7556f.png",
     "static/media/gamedev.4f5fd17f.png": "/static/media/gamedev.4f5fd17f.png",
     "static/media/github.a2d8c872.png": "/static/media/github.a2d8c872.png",
     "static/media/gmail.964d24a8.ico": "/static/media/gmail.964d24a8.ico",
@@ -23,10 +26,10 @@
     "static/media/webdev.c0842599.png": "/static/media/webdev.c0842599.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.55c0b4cc.js",
+    "static/js/runtime-main.cb1a35c9.js",
     "static/css/2.562b42ed.chunk.css",
-    "static/js/2.1f100002.chunk.js",
-    "static/css/main.193a704d.chunk.css",
-    "static/js/main.8ae99a32.chunk.js"
+    "static/js/2.4159cde4.chunk.js",
+    "static/css/main.637f5c6f.chunk.css",
+    "static/js/main.61c8b64a.chunk.js"
   ]
 }
