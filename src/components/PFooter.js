@@ -74,7 +74,7 @@ class PFooter extends React.Component {
                     </a>
                   </Col>
                   <Col>
-                    <a href="https://www.linkedin.com/in/jen-chieh-shen-17a02780/">
+                    <a href="https://www.linkedin.com/company/pixisoft/">
                       <img alt="LinkedIn" src={ linkedin } width="50"
                            className={`${this.state.bLinkedIn ? "animate__animated animate__heartBeat" : ""}`}
                            id="bLinkedIn"
