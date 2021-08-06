@@ -40,7 +40,7 @@ class PContent extends React.Component {
             { ReactHtmlParser(this.props.getContext("PrivacyPolicy")) }
           </Container>
         </Route>
-        <Route path="/terms-of-use">
+        <Route path={ process.env.PUBLIC_URL + "/terms-of-use" }>
           <Container className="p-5">
             { ReactHtmlParser(this.props.getContext("TermsOfUse")) }
           </Container>

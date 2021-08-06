@@ -14,6 +14,8 @@ import {
 
 import ReactHtmlParser from 'react-html-parser';
 
+import { BrowserRouter as Link } from "react-router-dom";
+
 import logo from '../images/logo.png';
 import github from '../images/icons/github.png';
 import youtube from '../images/icons/youtube.png';
@@ -97,7 +99,7 @@ class PFooter extends React.Component {
                       <a href="/privacy-policy">Privacy Policy</a>
                     </Col>
                     <Col>
-                      <a href="/terms-of-use">Terms of Use</a>
+                      <Link to={process.env.PUBLIC_URL + '/'}>Terms of Use</Link>
                     </Col>
                   </Row>
                 </Container>
