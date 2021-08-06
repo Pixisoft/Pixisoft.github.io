@@ -14,6 +14,8 @@ import {
   Button,
 } from 'react-bootstrap';
 
+import { Link } from 'react-scroll';
+
 import logo from '../images/logo.png';
 
 /**
@@ -24,7 +26,7 @@ class PNavbar extends React.Component {
     return (
       <Navbar variant="dark" bg="dark" expand="lg">
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="#/">
             <h3>
               <img alt="Logo" src={ logo } width="40"/>
               { ' ' + this.props.getContext('Direct.Name') }
@@ -33,18 +35,26 @@ class PNavbar extends React.Component {
           <Navbar.Toggle aria-controls="navbar-dark"/>
           <Navbar.Collapse id="navbar-dark">
             <Nav className="container-fluid justify-content-end">
-              <Button variant="dark" data-balloon-pos="down"
-                      aria-label={ this.props.getContext('Tip.Company') }>
-                { this.props.getContext('Direct.Company') }</Button>
-              <Button variant="dark" data-balloon-pos="down"
-                      aria-label={ this.props.getContext('Tip.Services') }>
-                { this.props.getContext('Direct.Services') }</Button>
-              <Button variant="dark" data-balloon-pos="down" disabled
-                      aria-label={ this.props.getContext('Tip.Team') }>
-                { this.props.getContext('Direct.Team') }</Button>
-              <Button variant="dark" data-balloon-pos="down"
-                      aria-label={ this.props.getContext('Tip.Contact') }>
-                { this.props.getContext('Direct.Contact') }</Button>
+              <Link  to="company" spy={true}>
+                <Button variant="dark" data-balloon-pos="down"
+                        aria-label={ this.props.getContext('Tip.Company') }>
+                  { this.props.getContext('Direct.Company') }</Button>
+              </Link>
+              <Link  to="services" spy={true}>
+                <Button variant="dark" data-balloon-pos="down"
+                        aria-label={ this.props.getContext('Tip.Services') }>
+                  { this.props.getContext('Direct.Services') }</Button>
+              </Link>
+              <Link  to="team" spy={true}>
+                <Button variant="dark" data-balloon-pos="down" disabled
+                        aria-label={ this.props.getContext('Tip.Team') }>
+                  { this.props.getContext('Direct.Team') }</Button>
+              </Link>
+              <Link  to="contact" spy={true}>
+                <Button variant="dark" data-balloon-pos="down"
+                        aria-label={ this.props.getContext('Tip.Contact') }>
+                  { this.props.getContext('Direct.Contact') }</Button>
+              </Link>
               <NavDropdown
                 id="nav-dropdown-dark" title="🌍" menuvariant="dark">
                 {

@@ -17,7 +17,7 @@ class PCompany extends React.Component {
   state = {};
   render () {
     return (
-      <Container className="text-center">
+      <Container id="company" className="text-center">
         <Row className="p-5">
           <Col>
             <h1>{ this.props.getContext('Direct.Company') }</h1>
