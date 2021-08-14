@@ -4,4 +4,3 @@
 # Pixisoft
 
 Landing page for Pixisoft
-c
